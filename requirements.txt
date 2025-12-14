@@ -1,0 +1,12 @@
+openai>=1.40.0
+python-dotenv>=1.0.1
+
+Pillow>=10.3.0
+mss>=9.0.1
+
+pyautogui>=0.9.54
+pyscreeze>=0.1.30
+pygetwindow>=0.0.9
+pymsgbox>=1.0.9
+pyperclip>=1.9.0
+mouseinfo>=0.1.3
