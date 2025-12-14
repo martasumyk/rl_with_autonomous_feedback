@@ -10,3 +10,12 @@ pygetwindow>=0.0.9
 pymsgbox>=1.0.9
 pyperclip>=1.9.0
 mouseinfo>=0.1.3
+
+torch>=2.2.0
+transformers>=4.45.0
+accelerate>=0.34.0
+trl>=0.9.6
+peft>=0.12.0
+numpy>=1.26.0
+
+qwen-vl-utils>=0.0.10
