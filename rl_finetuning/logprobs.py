@@ -1,6 +1,7 @@
+from typing import Dict
+
 import torch
 import torch.nn.functional as F
-from typing import Dict
 
 
 def sequence_logprob(

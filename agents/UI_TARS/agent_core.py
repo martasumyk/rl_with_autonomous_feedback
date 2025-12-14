@@ -1,14 +1,14 @@
+import json
 import os
 import re
 import time
-import json
-import pyautogui
 from datetime import datetime
-from typing import Dict, List, Any
+from typing import Any, Dict, List
 
-from vision import save_and_encode, add_box_token
-from llm_client import build_messages, query_model, init_client
-from config import TASK, LOG_ROOT
+import pyautogui
+from config import LOG_ROOT, TASK
+from llm_client import build_messages, init_client, query_model
+from vision import add_box_token, save_and_encode
 
 
 def extract_thought(model_reply: str) -> str:

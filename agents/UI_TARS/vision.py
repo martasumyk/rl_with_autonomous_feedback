@@ -1,9 +1,11 @@
+import base64
 import io
 import os
-import base64
 import re
+
 import mss
 from PIL import Image
+
 
 def capture_screenshot() -> Image.Image:
     with mss.mss() as sct:

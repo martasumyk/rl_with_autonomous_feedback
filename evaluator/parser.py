@@ -2,6 +2,7 @@ import json
 import re
 from typing import Any, Dict, Optional
 
+
 def safe_json_extract(text: str) -> Optional[Dict[str, Any]]:
     text = (text or "").strip()
 

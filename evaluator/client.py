@@ -1,6 +1,8 @@
 import os
-from openai import OpenAI
+
 from config import HF_BASE_URL
+from openai import OpenAI
+
 
 def init_eval_client() -> OpenAI:
     return OpenAI(

@@ -1,23 +1,19 @@
 import os
 import time
+from dataclasses import dataclass
+from typing import Any, Dict, List, Tuple
+
 import torch
 import torch.nn.functional as F
-from dataclasses import dataclass
-from typing import List, Dict, Any, Tuple
-from PIL import Image
-
-from transformers import AutoProcessor
-from transformers import AutoModelForCausalLM
-
+from logprobs import sequence_logprob
 from peft import LoraConfig, get_peft_model
+from PIL import Image
 from qwen_vl_utils import process_vision_info
+from reward import NoiseRates, corrected_reward
+from rollout_env import DesktopRolloutEnv
+from transformers import AutoModelForCausalLM, AutoProcessor
 
 from agents.UI_TARS.config import TASK
-from rollout_env import DesktopRolloutEnv
-from reward import NoiseRates, corrected_reward
-from logprobs import sequence_logprob
-
-
 
 
 @dataclass

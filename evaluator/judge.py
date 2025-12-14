@@ -1,10 +1,12 @@
 import os
-from typing import Dict, Any
+from typing import Any, Dict
+
 from PIL import Image
 
-from .client import init_eval_client, get_eval_model_id
+from .client import get_eval_model_id, init_eval_client
+from .parser import normalize_verdict, safe_json_extract
 from .prompts import EVAL_PROMPT
-from .parser import safe_json_extract, normalize_verdict
+
 
 def encode_png_b64(img: Image.Image) -> str:
     buf = io.BytesIO()

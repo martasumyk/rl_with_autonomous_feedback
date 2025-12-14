@@ -1,7 +1,9 @@
-from typing import List, Dict
-from openai import OpenAI
-from config import HF_BASE_URL, MODEL_ID, build_instruction
 import os
+from typing import Dict, List
+
+from config import HF_BASE_URL, MODEL_ID, build_instruction
+from openai import OpenAI
+
 
 def init_client() -> OpenAI:
     return OpenAI(
